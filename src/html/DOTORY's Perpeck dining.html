@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOTORY's Perpeck dining</title>
+    <script src="js\nwsapi-jquery.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--jquery와 4버전부터 지원되는 popper.js를 사용하려면 추가-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- 테마 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css">
+
+    <!--예쁜 alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<script>
+    function clear(){
+        alert("Are you sure? Do you want to clear all data?");
+    }
+
+    function save(){
+        window.confirm("Do you want to save that data?");
+    }
+
+    function calculate(){
+        //아직 기능을 안만들었음.
+    }
+</script>
+
+<style>
+    
+</style>
+
+    
+<body style="margin: 50px 150px;">
+
+
+<center>
+<h1>LET'S Start Sweet Dinner Time :)!</h1>
+
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<br>
+<br>
+<table>
+    <tr>
+        <td>What kind of MEAT&nbsp;&nbsp;  </td>
+        <td><input type="text" dir="rtl" ></td>
+    </tr>
+    <tr>
+        <td>Green Tripe&nbsp;&nbsp;  </td>
+        <td><input type="text" value="5g" readonly dir="rtl"> </td>
+    </tr>
+    <tr>
+        <td> How much&nbsp;&nbsp; </td>
+        <td><input type="text" value="g"dir="rtl"></td>
+    </tr>    
+    <tr>
+        <td> Total </td>
+        <td><input type="text" value="g"dir="rtl" readonly></td>
+    </tr>
+</table>    
+<br>
+<button class="btn btn-primary" onclick = "clear()"> CLEAR </button>&nbsp;
+<button class="btn btn-primary" onclick = "calculate()"> CALCULATE </button>&nbsp;
+<button class="btn btn-primary" onclick = "save()"> SAVE </button>&nbsp;
+    
+<br>
+<br>
+<br>
+<br>
+<b>I really like this page!</b>
+<br>
+<b>For Charming Puppy! Kind poodle!</b>
+<br>
+<br>
+<br>
+<!--<div>
+    토리에게 밥을 줄 때 <br>
+    해당 양식에 맞추어 기록하세요<br>
+    <br>
+    토리에게 적당한 식사량은 140~160g 입니다 <br>
+    그린트라이프는 항상 5g을 주세요 <br>
+    토리에게 기다려를 30초 이상 시킨 뒤, 밥을 주세요
+
+</div>-->
+
+<div class="alert alert-dismissible alert-secondary">
+    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
+
+</center>
+
+</body>
+</html>
