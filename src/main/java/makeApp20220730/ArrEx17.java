@@ -13,7 +13,8 @@ public class ArrEx17 {
 		for (String name : names) {
 			System.out.println(name+" : "+weight[i]+"kg");
 			i++;
-		}
+		}		
+		
 		
 	}
 
